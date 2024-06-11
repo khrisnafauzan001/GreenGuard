@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Guard</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="font-poppins">
+    <header class="p-3 bg-primary-50">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-0">
+            <div class="flex items-center space-x-4">
+                <img src="../public/images/Green_Guard_logo.png" alt="Logo Green Guard" class="h-16 md:h-20">
+            </div>
+            <button id="menu-button" class="block md:hidden text-teal-900 focus:outline-none ml-auto">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <nav>
+                <ul id="menu" class="hidden md:flex space-x-8 text-primary-800 text-base">
+                    <li><a href="#" class="">Beranda</a></li>
+                    <li><a href="#" class="">Pengaduan</a></li>
+                    <li><a href="#" class="">Artikel</a></li>
+                    <li><a href="#" class="">Riwayat</a></li>
+                    <li><a href="#" class="">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Menu Mobile -->
+        <nav id="mobile-menu" class="md:hidden">
+            <ul class="space-y-2 p-4 text-teal-900">
+                <li><a href="#" class="block hover:text-teal-700">Beranda</a></li>
+                <li><a href="#" class="block hover:text-teal-700">Pengaduan</a></li>
+                <li><a href="#" class="block hover:text-teal-700">Artikel</a></li>
+                <li><a href="#" class="block hover:text-teal-700">Riwayat</a></li>
+                <li><a href="#" class="block hover:text-teal-700">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="">
+        <!-- Hero -->
+        <div class="w-full bg-primary-300">
+            <div class="container mx-auto flex flex-col md:flex-row items-center md:space-y-0 py-16">
+                <div class=" md:w-1/2">
+                    <h1 class="text-6xl font-poppins font-bold text-black mb-4 leading-relaxed">Cintai & Lestarikan <span class="text-primary-800">Lingkungan</span> Kita</h1>
+                    <p class="mt-20 font-poppins text-primary-800 max-w-2xl mb-6">
+                        Tingkatkan kualitas lingkungan sekitarmu bersama Platform Pengaduan Pencemaran Lingkungan. Laporkan berbagai bentuk pencemaran dengan mudah dan cepat, dan berkontribusilah dalam menjaga kelestarian alam untuk masa depan yang lebih baik.
+                    </p>
+                    <button class="font-poppins font-semibold text-base bg-primary-800 text-primary-50 py-2 px-6 rounded-lg hover:bg-teal-800 transition duration-300">
+                        Laporkan!
+                    </button>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="../public/images/bumi.png" alt="Bumi Bahagia" class="w-full mr-0 md:mr-32">
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full bg-primary-50">
+            <div class="container mx-auto py-12">
+                <div class="mt-6 flex flex-wrap justify-center gap-18 mb-12">
+                    <!-- Card 1 -->
+                    <div class="bg-primary-100 w-85 h-62 rounded-lg-10 shadow-md p-8 flex flex-col justify-center text-primary-800">
+                        <h3 class="text-xl text-center font-poppins font-semibold mb-4">Pelaporan Cepat dan Mudah</h3>
+                        <p class="font-poppins text-start">Laporkan insiden polusi dengan langkah sederhana, unggah foto, video, dan lokasi.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-primary-100 w-85 h-62 rounded-lg-10 shadow-md p-8 flex flex-col justify-center text-primary-800">
+                        <h3 class="text-xl text-center font-poppins font-semibold mb-4">Anonimitas Terjamin</h3>
+                        <p class="font-poppins text-start">Laporkan masalah tanpa mengungkap identitas Anda, memastikan privasi terjaga.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-primary-100 w-85 h-62 rounded-lg-10 shadow-md p-8 flex flex-col justify-center text-primary-800">
+                        <h3 class="text-xl text-center font-poppins font-semibold mb-4">Edukasi Kesadaran Lingkungan</h3>
+                        <p class="font-poppins text-start">Akses artikel/video untuk meningkatkan kesadaran dan pengetahuan lingkungan.</p>
+                    </div>
+                </div>
+    
+                <div class="text-center">
+                    <h1 class="text-6xl font-poppins font-bold text-black mt-14 mb-14">Tentang Kami</h1>
+                </div>
+                <div class="flex flex-col md:flex-row items-center justify-center mb-12 gap-8 max-w-7xl mx-auto">
+                    <img src="images/kontenaboutme.png" alt="Gambar" class="w-full md:w-1/2 h-auto rounded-lg shadow-md mb-4 md:mb-0 md:mr-4 max-h-75 max-w-87">
+                    <div class="md:w-1/2">
+                        <div class="mb-8">
+                            <h2 class="text-2xl font-semibold text-teal-900 mb-4">Apa itu Green Guard?</h2>
+                            <p class="text-gray-700">
+                                Green Guard adalah platform pengaduan pencemaran lingkungan yang memudahkan masyarakat melaporkan berbagai bentuk pencemaran dengan cepat dan mudah. Kami berkomitmen untuk menjaga kelestarian alam dan menciptakan lingkungan yang lebih bersih dan sehat bagi generasi mendatang. Melalui Green Guard, setiap individu dapat berkontribusi langsung dalam pelestarian alam dengan mengirimkan laporan beserta bukti.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-semibold text-teal-900 mb-4">Bagaimana Melapor di Green Guard?</h2>
+                            <p class="text-gray-700">
+                                Kami menyediakan fitur pengaduan berupa form, dimana nanti Anda dapat mengisi form tersebut mengenai lokasi kejadian (provinsi, kota, alamat) dan opsi untuk menyertakan video/foto sebagai bukti pengaduan pencemaran lingkungan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="font-poppins bg-primary-800 text-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start mb-4">
+                    <img src="images/Green_Guard_logoPutih.png" alt="Green Guard Logo" class="">
+                </div>
+                <p class="font-poppins font-light text-base leading-7 max-w-xs">
+                    Green Guard hadir sebagai solusi inovatif untuk melaporkan pencemaran lingkungan, memudahkan masyarakat dalam menjaga kebersihan dan kelestarian alam di sekitar mereka.
+                </p>
+            </div>
+            <div class="mb-6 md:mb-0 font-poppins text-center md:text-left">
+                <h3 class="text-lg font-semibold mb-6">Tentang</h3>
+                <ul class="text-base space-y-4">
+                    <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Tim Kami</a></li>
+                </ul>
+            </div>
+            <div class="text-center font-poppins md:text-left">
+                <h3 class="text-lg font-semibold mb-6">Kontak Kami</h3>
+                <ul class="text-base space-y-8">
+                    <li class="flex justify-center md:justify-start items-center mb-2">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.51 0-10 4.49-10 10.02 0 4.47 2.93 8.28 7.07 9.65.52.1.71-.23.71-.5v-1.74c-2.86.62-3.46-1.24-3.46-1.24-.47-1.2-1.16-1.52-1.16-1.52-.95-.65.07-.64.07-.64 1.05.08 1.6 1.08 1.6 1.08.93 1.6 2.44 1.14 3.03.87.1-.67.37-1.14.67-1.4-2.28-.26-4.67-1.14-4.67-5.07 0-1.12.4-2.04 1.05-2.76-.11-.26-.46-1.3.1-2.71 0 0 .86-.28 2.81 1.05.82-.23 1.7-.34 2.57-.34.87 0 1.75.11 2.57.34 1.95-1.33 2.81-1.05 2.81-1.05.56 1.41.21 2.45.1 2.71.65.72 1.05 1.64 1.05 2.76 0 3.94-2.4 4.81-4.68 5.07.37.31.71.92.71 1.85v2.75c0 .27.19.61.72.5C19.07 20.34 22 16.53 22 12.06c0-5.53-4.49-10.02-10-10.02z"/></svg>
+                        <span class="ml-2">@green_guard</span>
+                    </li>
+                    <li class="flex justify-center md:justify-start items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>
+                          <span class="ml-2">greenguard@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-base">
+            Copyright © 2024 Green Guard
+        </div>
+    </footer>
+</body>
+<script src="../scripts/index.js"></script>
+
+</html>
