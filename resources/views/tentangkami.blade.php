@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
         @vite(['resources/css/app.css','resources/js/app.js'])
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
         <title>Green Guard</title>
 
@@ -15,10 +12,8 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- Styles -->
-    
     </head>
-    <body>
-        
+    <body class="bg-green-50 font-sans">
     <nav class="bg-[#E6F5F3] border-gray-200 ">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -48,28 +43,53 @@
     </div>
   </div>
 </nav>
-   
-
-<div class="flex font-bold text-5xl w-full justify-center items-center h-auto p-5 text-[#00534B]">Riwayat Pengaduan Anda</div>
-
-@foreach ($datas as $data)
-
-<div class="flex w-full h-auto justify-center items-center px-14">
-    <div class="flex w-auto h-auto bg-[#B0DEDA] rounded-md p-4">
-        <div class="flex">
-            <img src="{{ asset('storage/imgPencemaran/' . $data->file) }}" alt="">
+    <section id="tentang-kami" class="py-16 px-8">
+        <div class="container mx-auto text-center"> 
+            <h1 class="text-4xl font-bold text-green-900">Tentang Kami</h1>
         </div>
-        <div class="flex flex-col ml-6">
-            <div class="font-semibold text-[#00534B] mb-2">{{$data->tanggal_pencemaran}} - {{$data->jenis_pencemaran}}</div>
-            <div class="font-semibold text-[#00534B] mb-2">{{$data->lokasi_pencemaran}}</div>
-            <div class="text-[#00534B]">{{$data->deskripsi}}</div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
+            <img src="img/logobesar.png" alt="Green Guard Logo" class="mx-auto mb-8 mr-20 mt-0 w-80">
+            <p class="text-green-700 text-lg mt-12">
+                Green Guard hadir sebagai solusi inovatif untuk melaporkan pencemaran lingkungan, memudahkan masyarakat dalam menjaga kebersihan dan kelestarian alam di sekitar mereka. 
+                Konsep ini tidak hanya memberikan kemudahan, tetapi juga merupakan langkah cerdas dalam menghadirkan lingkungan yang lebih sehat dan bersih. 
+                Green Guard mempersembahkan solusi modern untuk memudahkan setiap individu melaporkan berbagai bentuk pencemaran, 
+                memastikan setiap sudut lingkungan kita tetap terjaga keindahannya, membawa kesejukan dan kenyamanan bagi semua.
+            </p>
         </div>
-    </div>
-</div>
+    </section>
 
-@endforeach
+    <!-- Tim Kami Section -->
+    <section id="tim-kami" class="px-8 bg-green-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-900 mb-12">Tim Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Member 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="img/tentang-kami.png" alt="Khrisna Fauzan Maulana" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold text-green-900 mb-2">Khrisna Fauzan Maulana</h3>
+                    <p class="text-green-700">Backend Developer</p>
+                    <p class="text-green-600 text-sm">FEBE</p>
+                </div>
+                <!-- Member 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="img/tentang-kami.png" alt="Laita Zidan" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold text-green-900 mb-2">Laita Zidan</h3>
+                    <p class="text-green-700">Front-End Developer</p>
+                    <p class="text-green-600 text-sm">FEBE</p>
+                </div>
+                <!-- Member 3 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="img/tentang-kami.png" alt="Putri Nur Rahmah" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold text-green-900 mb-2">Putri Nur Rahmah</h3>
+                    <p class="text-green-700">UI/UX Designer</p>
+                    <p class="text-green-600 text-sm">FEBE</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer id="footer" class="px-8 bg-green-900 mt-16">
+    <!-- Footer -->
+    <footer id="footer" class="px-8 bg-green-900 mt-16">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
             <!-- Bagian Kiri: Logo dan Deskripsi -->
             <div class="flex flex-col">
@@ -116,3 +136,5 @@
             <p class="text-center text-sm text-green-50">Copyright &copy; 2024 Green Guard</p>
         </div>
     </footer>
+    </body>
+</html>

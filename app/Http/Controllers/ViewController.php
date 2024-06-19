@@ -17,6 +17,17 @@ class ViewController extends Controller
         return view('home');
     }
 
+    public function viewArtikel(Request $request)
+    {
+        return view('artikel');
+    }
+
+    
+    public function viewTentangkami(Request $request)
+    {
+        return view('tentangkami');
+    }
+
     public function viewRiwayat()
     {
         $datas = DB::table('pengaduan')->get();

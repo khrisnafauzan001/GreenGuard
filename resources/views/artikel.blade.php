@@ -3,10 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
         @vite(['resources/css/app.css','resources/js/app.js'])
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
         <title>Green Guard</title>
 
@@ -15,10 +13,12 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- Styles -->
-    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     </head>
     <body>
         
+
     <nav class="bg-[#E6F5F3] border-gray-200 ">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -48,27 +48,48 @@
     </div>
   </div>
 </nav>
-   
 
-<div class="flex font-bold text-5xl w-full justify-center items-center h-auto p-5 text-[#00534B]">Riwayat Pengaduan Anda</div>
-
-@foreach ($datas as $data)
-
-<div class="flex w-full h-auto justify-center items-center px-14">
-    <div class="flex w-auto h-auto bg-[#B0DEDA] rounded-md p-4">
-        <div class="flex">
-            <img src="{{ asset('storage/imgPencemaran/' . $data->file) }}" alt="">
-        </div>
-        <div class="flex flex-col ml-6">
-            <div class="font-semibold text-[#00534B] mb-2">{{$data->tanggal_pencemaran}} - {{$data->jenis_pencemaran}}</div>
-            <div class="font-semibold text-[#00534B] mb-2">{{$data->lokasi_pencemaran}}</div>
-            <div class="text-[#00534B]">{{$data->deskripsi}}</div>
-        </div>
+<div class="flex text-5xl items-center justify-center my-4 font-bold">Artikel</div>
+<div class="flex w-full h-auto mx-4 justify-center items-center my-3">
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg mx-3">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
     </div>
 </div>
-
-@endforeach
-
+<div class="flex w-full h-auto mx-4 justify-center items-center my-3">
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg mx-3">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+</div>
+<div class="flex w-full h-auto mx-4 justify-center items-center my-3">
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg mx-3">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+</div>
+<div class="flex w-full h-auto mx-4 justify-center items-center my-3">
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg mx-3">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+    <div class="flex h-fit w-1/3 bg-[#B0DEDA] p-5 pr-4 rounded-lg">
+        <img src="img/artikel.png" class="flex mr-2">
+        <div class="flex font-bold text-base text-[#00534B] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+    </div>
+</div>
 <footer id="footer" class="px-8 bg-green-900 mt-16">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
             <!-- Bagian Kiri: Logo dan Deskripsi -->
@@ -116,3 +137,6 @@
             <p class="text-center text-sm text-green-50">Copyright &copy; 2024 Green Guard</p>
         </div>
     </footer>
+
+</body>
+</html>

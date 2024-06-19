@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @vite(['resources/css/app.css','resources/js/app.js'])
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
         <title>Green Guard</title>
 
@@ -32,19 +32,16 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#E6F5F3] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-[#E6F5F3] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="{{route('home')}}" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Beranda</a>
+          <a href="{{route('home')}}" class="block py-2 px-3 text-[#00534B] rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500" aria-current="page">Beranda</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pengaduan</a>
+          <a href="{{route('artikel')}}" class="block py-2 px-3 text-[#00534B] rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500">Artikel</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Artikel</a>
+          <a href="{{route('riwayat')}}" class="block py-2 px-3 text-[#00534B] rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500">Riwayat</a>
         </li>
         <li>
-          <a href="{{route('riwayat')}}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Riwayat</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tentang Kami</a>
+          <a href="{{route('tentangkami')}}" class="block py-2 px-3 text-[#00534B] rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500">Tentang Kami</a>
         </li>
       </ul>
     </div>
@@ -58,8 +55,8 @@
     
 
 <!-- Modal toggle -->
-<button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-  Toggle modal
+<button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="block text-white bg-[#00534B]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-auto mt-5" type="button">
+  Laporkan!
 </button>
 
 <!-- Main modal -->
@@ -133,7 +130,69 @@
     <div class="text-[#00534B]"">Laporkan insiden polusi dengan langkah sederhana, unggah foto, video, dan lokasi.</div>
   </div>
 </div>
-<div class="flex">Tentang Kami</div>
+<div class="flex justify-center items-center text-6xl font-bold mb-4">Tentang Kami</div>
+<div class="flex w-full h-auto p-5">
+  <div class="flex w-1/2 h-auto justify-center items-center">
+    <img src="img/siram.png" class="flex ">
+  </div>
+  <div class="w-1/2 flex h-auto flex-col justify-center ">
+    <div class="flex text-[#00534B] font-semibold text-xl">Apa itu Green Guard?</div>
+    <div class="flex text-justify text-[#00534B] my-3">Green Guard adalah platform pengaduan pencemaran lingkungan yang memudahkan masyarakat melaporkan berbagai bentuk pencemaran dengan cepat dan mudah. Kami berkomitmen untuk menjaga kelestarian alam dan menciptakan lingkungan yang lebih bersih dan sehat bagi generasi mendatang. Melalui Green Guard, setiap individu dapat berkontribusi langsung dalam pelestarian alam dengan mengirimkan laporan beserta bukti.</div>
+    <div class="flex my-3 semibold text-xl text-[#00534B]">Bagaimana Melapor di Green Guard?</div>
+    <div class="flex text-justify text-[#00534B]">Kami menyediakan fitur pengaduan berupa form, dimana nanti Anda dapat mengisi form tersebut mengenai lokasi kejadian (provinsi, kota, alamat) dan opsi untuk menyertakan  video/foto sebagai bukti pengaduan pencemaran lingkungan.</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="px-8 bg-green-900 mt-16">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <!-- Bagian Kiri: Logo dan Deskripsi -->
+            <div class="flex flex-col">
+                <a href="https://greenguard.com/" class="flex items-center">
+                    <img src="img/logo putih 1.png" class="w-36 mb-4" alt="Green Guard Logo" />
+                </a>
+                <p class="text-green-50">Green Guard hadir sebagai solusi inovatif untuk melaporkan pencemaran lingkungan, memudahkan masyarakat dalam menjaga kebersihan dan kelestarian alam di sekitar mereka.</p>
+            </div>
+    
+            <!-- Bagian Kanan: Tentang dan Kontak Kami -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="mb-6 text-xl font-bold text-green-50">Tentang</h2>
+                    <ul class="text-green-50">
+                        <li class="mb-2">
+                            <a href="#tentang-kami">Tentang Kami</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#tim-kami">Tim Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-xl font-bold text-green-50">Kontak Kami</h2>
+                    <ul class="text-green-50">
+                        <li class="mb-2">
+                            <i class="fa-brands fa-instagram mr-4"></i>
+                            <a>@green_guard</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fa-regular fa-envelope mr-4"></i>
+                            <a>greenguard@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Bagian Bawah: Copyright -->
+        <div class="w-full bg-green-900 py-4">
+            <p class="text-center text-sm text-green-50">Copyright &copy; 2024 Green Guard</p>
+        </div>
+    </footer>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
 
     </body>
